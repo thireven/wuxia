@@ -1,0 +1,197 @@
+<html>
+<head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css"/>
+ <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+ <style>
+ body {
+   background: #BFBBB5;
+   font-family: GillSans, Calibri, Trebuchet, sans-serif;
+ }
+.text-container {
+  background: rgb(88, 73, 73);
+  color: #BDBDBD !important;
+}
+
+.text-container p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.text-container dfn {
+  font-style: normal;
+  border-bottom: 2px dotted rgb(28, 191, 236);
+  cursor: pointer;
+}
+
+.text-container mark {
+  background: transparent;
+  border-bottom: 1.5px dashed #FE3522;
+  cursor: pointer;
+  color: inherit;
+}
+
+#toast-container {
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#toast-container .toast {
+  float: none;
+  color: #B9B9B9;
+}
+
+.toast em {
+  color: #fff;
+}
+
+.toast.corrected {
+  background-color: #A52626;
+}
+
+comment {
+  border-top: 4px double #E5D841;
+  cursor: pointer;
+}
+
+#comments-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  transition: all .5s ease-in-out;
+  background: #E18728;
+}
+
+#comments-container.off {
+  right: -50%;
+}
+
+ </style>
+</head>
+<body>
+
+  <div class="row">
+      <div class="col offset-s0 offset-m1 offset-l1">&nbsp;</div>
+      <div class="col s12 m8 l8 text-container">
+        <p>"This must be <dfn data-id="0">Linley</dfn>'s [Lin'lei] first day at training. Who would've thought he'd be so formidable?" Lorry said, amazed. <mark data-id="0">Next to him</mark>, Roger and Hillman also noticed. Looking in that direction, they saw that to the north, a single brown haired boy was still holding firm. His lips tightened, the boy stared determinedly in front, both fists tightly clenched so hard that his fists were white.</p>
+
+        <p>A look of pleased surprise appeared in Hillman's eyes.</p>
+
+        <p>"Good kid!" Hillman secretly praised. Despite being just six years old, he could maintain the <comment data-id="0" title="3">'Qi Building Stance'</comment> for as long as the ten year old kids.</p>
+
+        <p><dfn data-id="0">Linley</dfn>, full name <dfn data-id="0">Linley</dfn> Baruch, was the eldest son and heir to the Baruch clan, which ruled over the Wushan town. The Baruch clan was an extremely old clan. Once, it was extremely prosperous, but after thousands of years, it had only three members remaining. The clan leader, Hogg [Huo'ge] Baruch, and his two sons. The elder son was <dfn data-id="0">Linley</dfn> Baruch, six years old. The younger son, <dfn data-id="1">Wharton</dfn> [Wo'dun] Baruch, was just two years old. As for his wife, when she gave birth to the younger son, she died in the midst of childbirth. <dfn data-id="0">Linley</dfn>'s grandfather also was dead, having lost his life in battle.</p>
+
+        <p><dfn data-id="0">Linley</dfn>'s legs were trembling. Although his willpower was strong, his leg muscles were strained to their utmost and were beginning to tremble uncontrollably. He finally collapsed and sat down.</p>
+
+        <p>"<dfn data-id="0">Linley</dfn>, how do you feel?" Smiling, Hillman walked towards him.</p>
+
+        <p><dfn data-id="0">Linley</dfn> cracked a smile, <mark data-id="1">revealing his small canines</mark>. "I'm fine, Uncle Hillman." As captain of the Baruch clan's guardsmen, Hillman had watched <dfn data-id="0">Linley</dfn> grow up. Naturally, the two of them were very close.</p>
+
+        <p>"Well done. You acted like a man." Hillman patted <dfn data-id="0">Linley</dfn> on the head. Immediately, the hair on <dfn data-id="0">Linley</dfn>'s head became tousled like windblown grass.</p>
+
+        <p>"Haha." <dfn data-id="0">Linley</dfn> grinned widely. In his heart, he felt very happy at being praised by Hillman.</p>
+
+        <p>After resting for a while, they continued their exercises. The training regime for the six and seven year olds was a lot more relaxed. But for the teenagers, the training regime was terrifyingly strict.</p>
+      </div>
+
+    </div>
+
+    <div id="comments-container" class="off z-depth-1">
+      <ul class="collection">
+        <li class="collection-header"><h4>Comments</h4></li>
+    <li class="collection-item avatar">
+
+      <span class="title">User</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">time</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle"></i>
+      <span class="title">User</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">time</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle green"></i>
+      <span class="title">User</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">time</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle red"></i>
+      <span class="title">User</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">time</i></a>
+    </li>
+  </ul>
+
+    </div>
+
+    <script>
+    var glossary = {
+      0: 'Protagonist of this story, the eldest son and heir to the Baruch clan, the clan of the legendary Dragonblood Warriors.',
+      1: 'Younger brother of main protagonist Linley, a member of the Baruch clan.'
+    }
+
+    var originals = {
+      0: 'Next time him',
+      1: 'doth revealeth his pointy teeth'
+    }
+
+    var opened_toasts = {};
+
+    $(function() {
+      $('.text-container').on('click', 'dfn', showGlossary);
+      $('.text-container').on('click', 'mark', showCorrection);
+      $('.text-container').on('click', 'comment', showComments);
+    });
+
+    function showComments() {
+      $('#comments-container').toggleClass('off');
+    }
+
+    function showCorrection() {
+      var id = $(this).data('id'),
+          pre = $(this).text(),
+          text = "<span><em>Original</em>: " + originals[id] + "</span>";
+
+          id = "c" + id;
+
+          if(opened_toasts[id] == undefined || !opened_toasts[id]) {
+            opened_toasts[id] = true;
+            Materialize.toast(text, 7000, 'corrected', function() {
+              opened_toasts[id] = false;
+            });
+          }
+    }
+
+    function showGlossary() {
+      var id = $(this).data('id'),
+          pre = $(this).text(),
+          text = "<span><em>" + pre + "</em>: " + glossary[id] + "</span>";
+
+          id = "g" + id;
+
+      if(opened_toasts[id] == undefined || !opened_toasts[id]) {
+        opened_toasts[id] = true;
+        Materialize.toast(text, 7000, '', function() {
+          opened_toasts[id] = false;
+        });
+      }
+    }
+    </script>
+</body>
+</html>
