@@ -156,9 +156,10 @@ comment {
     var opened_toasts = {};
 
     $(function() {
-      $('.text-container').on('click', 'dfn', showGlossary);
-      $('.text-container').on('click', 'mark', showCorrection);
-      $('.text-container').on('click', 'comment', showComments);
+      $('.text-container')
+        .on('click', 'dfn', showGlossary)
+        .on('click', 'mark', showCorrection)
+        .on('click', 'comment', showComments);
     });
 
     function showComments() {
